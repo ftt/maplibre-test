@@ -37,7 +37,7 @@
     
     let geolocate = new maplibregl.GeolocateControl({
         positionOptions: { enableHighAccuracy: true },
-        trackUserLocation: true
+        trackUserLocation: false
     });
     geolocate.on('geolocate', (event) => {
         const latitude = event.coords.latitude;
